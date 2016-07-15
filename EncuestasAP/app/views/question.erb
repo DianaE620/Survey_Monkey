@@ -1,0 +1,18 @@
+
+<div class="question_container">
+
+<div class="pregunta"><%= @new_question.name %></div>
+
+<div id="opciones_container"></div>
+<br>
+
+<form id="respuestas">
+  Agrega una respuesta
+  <input class="long_input" type="text" name="respuesta" id="input_quest">
+  <input type="hidden" name="id_pregunta" value="<%= @new_question.id %>" >
+  <button>Agregar Respuesta</button>
+</form>
+
+</div>
+<br><br>
+<button id="termina_op">Terminar</button>

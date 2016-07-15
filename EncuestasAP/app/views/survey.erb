@@ -1,0 +1,21 @@
+<style>
+  .container{
+    padding: 0px 0px 20px 0px;
+  }
+</style>
+
+<div class="title_survey"><%= @survey.name %> </div>
+
+<br>
+
+<div id="contain_pregunta">
+<form id="pregunta">
+  <div class="sec_quest">Pregunta: &nbsp&nbsp&nbsp
+    <input class="long_input" type="text" name="question">
+    <input type="hidden" name="id" value="<%= @survey.id %>">
+    <button>Agregar</button>
+  </div>
+</form>
+</div>
+
+<div id="container_questions"></div>

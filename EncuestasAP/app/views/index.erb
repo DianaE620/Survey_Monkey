@@ -1,0 +1,25 @@
+
+  <h1>Bienvenido a esta App de encuestas!</h1>
+  <br><br>
+  <a href="/login">Login</a>
+  
+  <a href="/user/new">Resgistrarme</a>
+
+  
+
+ <% if session["user_id"] %>
+
+  <a href="/profile/<%= session['user_id']%>">Perfil</a>
+
+  <% end %>
+
+  <br><br>
+  <% if params["error_sesion"] %>
+
+    <div class="text_error">Recuerda iniciar sesion para ingresar</div>
+
+  <% end %>
+
+ 
+
+  

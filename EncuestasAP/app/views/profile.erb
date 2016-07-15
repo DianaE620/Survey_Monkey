@@ -1,0 +1,33 @@
+ 
+  
+  <br><br>
+
+  <div class="text_user">Bienvenido usuario: <%= session["nombre"]%> </div>
+
+  <br><br>
+<form class="form_quest" action="/survey/new" method="post">
+
+  Nombre de la encuesta: &nbsp&nbsp&nbsp
+  <input class="long_input" type="text" name="survey_name">
+  
+  <button>Crear encuesta</button>
+
+  <% if @survey %>
+  <br><br>
+    <div style="color:red"> <%= @survey.errors.full_messages.join %> </div>
+  <% end %>
+
+</form>
+
+<br><br>
+<div class="title_quest">Encuestas realizadas:</div>
+
+<br><br>
+<div class="title_quest">Encuestas contestadas:</div>
+
+
+<br><br>
+<a href="/">Inicio</a>
+
+<a href="/logout"> Cerrar Sesion</a>
+

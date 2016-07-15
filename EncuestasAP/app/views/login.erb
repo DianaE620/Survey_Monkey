@@ -1,0 +1,28 @@
+
+<div class="form_container">
+
+  <form action="/login" method="post">
+    Escribe tu correo:<br><br>
+    <input type="text" name="email">
+
+    <br><br>
+
+    Escribe tu contraseña:<br><br>
+    <input type="password" name="pass">
+
+    <br><br>
+    <button>Iniciar Sesion</button>
+
+  </form>
+
+  <br><br>
+  <% if @error %>
+
+  <div class="text_error">Usuario o Contraseña Incorrectos</div>
+
+  <% end %>
+
+</div>
+
+<br>
+<a href="/">Inicio</a>
